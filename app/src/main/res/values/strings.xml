@@ -208,5 +208,10 @@
         <item>@string/impresora </item>
     </string-array>
     <string name="mensaje1">Item agregado exitosamente</string>
+    <string name="resultado">Resultado</string>
+    <string name="censoReportado">Censo reportado (w)</string>
+    <string name="censoTotal">Censo total (w)</string>
+    <string name="evaluar">Evaluar</string>
+    <string name="desviacion">Desviacion (w)</string>
 
 </resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.estan.censodecarga.Resultado">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/censoTotal"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtReportado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/censoReportado"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtDesviacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/desviacion"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lblResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:onClick="Evaluar"
+        android:text="@string/evaluar" />
+
+</LinearLayout>

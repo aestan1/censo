@@ -29,8 +29,11 @@ public class Principal extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i = new Intent(Principal.this,AgregarAparato.class);
                 startActivity(i);
+                finish();
+
             }
         });
 
@@ -79,12 +82,17 @@ public class Principal extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_resultado) {
+            Intent i = new Intent(Principal.this,Resultado.class);
+            startActivity(i);
+
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 
 

@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.estan.censodecarga.Principal">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_resultado"
+        android:orderInCategory="100"
+        android:title="@string/resultado"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_diligenciar"
         android:orderInCategory="100"
         android:title="@string/diligenciar"
         app:showAsAction="never" />

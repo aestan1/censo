@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AgregarAparato"></activity>
+        <activity android:name=".AgregarAparato" />
+        <activity android:name=".Resultado"></activity>
     </application>
 
 </manifest>

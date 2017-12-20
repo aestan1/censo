@@ -83,4 +83,11 @@ public class AgregarAparato extends AppCompatActivity implements AdapterView.OnI
 
 
         }
+
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(AgregarAparato.this,Principal.class);
+        startActivity(i);
+        finish();
+    }
 }
