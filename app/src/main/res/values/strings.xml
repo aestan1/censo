@@ -213,5 +213,13 @@
     <string name="censoTotal">Censo total (w)</string>
     <string name="evaluar">Evaluar</string>
     <string name="desviacion">Desviacion (w)</string>
+    <string name="auditor">Auditor:</string>
+    <string name="ciudad">Ciudad:</string>
+    <string name="nic">Nic:</string>
+    <string name="orden">Orden de servicio:</string>
+    <string name="censoDictado">Censo (dictado/verificado):</string>
+    <string name="censoRep">Censo reportado (w):</string>
+    <string name="usuario">Nombre usuario:</string>
+    <string name="observaciones">Observaciones:</string>
 
 </resources>

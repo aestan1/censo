@@ -89,6 +89,13 @@ public class Principal extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_diligenciar) {
+            Intent i = new Intent(Principal.this,Form.class);
+            startActivity(i);
+
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

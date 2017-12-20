@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AgregarAparato" />
-        <activity android:name=".Resultado"></activity>
+        <activity android:name=".Resultado" />
+        <activity android:name=".Form"></activity>
     </application>
 
 </manifest>
