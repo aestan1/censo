@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Censo de carga</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">AGREGAR ITEM</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="agregar">Agregar</string>
+</resources>
