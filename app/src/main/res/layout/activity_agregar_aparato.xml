@@ -18,7 +18,7 @@
         android:textStyle="bold|italic" />
 
     <Spinner
-        android:id="@+id/spinner5"
+        android:id="@+id/cmbCategoria"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginBottom="5dp"
@@ -26,7 +26,7 @@
         android:layout_marginRight="10dp" />
 
     <Spinner
-        android:id="@+id/spinner6"
+        android:id="@+id/cmbItem"
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:layout_marginBottom="5dp"
@@ -39,12 +39,14 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
 
-        <android.support.design.widget.TextInputEditText
+        <EditText
+            android:id="@+id/txtCantidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:defaultFocusHighlightEnabled="false"
-            android:focusable="auto"
-            android:hint="@string/cantidad" />
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/cantidad"
+            android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -55,6 +57,7 @@
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
         android:layout_marginTop="20dp"
+        android:onClick="agregarAparato"
         android:text="@string/agregar" />
 
 </LinearLayout>

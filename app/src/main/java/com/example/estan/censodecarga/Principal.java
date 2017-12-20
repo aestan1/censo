@@ -9,9 +9,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class Principal extends AppCompatActivity {
-
+    private TableLayout tabla;
+    private ArrayList<Aparato> aparatos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +33,35 @@ public class Principal extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+        tabla = (TableLayout)findViewById(R.id.tabla);
+        aparatos=Datos.obtener();
+
+        for (int i = 0; i <aparatos.size() ; i++) {
+            TableRow fila = new TableRow(this);
+            TextView c1 = new TextView(this);
+            TextView c2 = new TextView(this);
+            TextView c3 = new TextView(this);
+
+
+            c1.setText(aparatos.get(i).getNombre());
+            c2.setText(""+aparatos.get(i).getCantidad());
+            c3.setText(""+aparatos.get(i).getTotal());
+            c2.setTextAlignment(3);
+            c3.setTextAlignment(3);
+
+
+
+            fila.addView(c1);
+            fila.addView(c2);
+            fila.addView(c3);
+
+            tabla.addView(fila);
+
+
+        }
     }
 
     @Override
@@ -50,4 +85,7 @@ public class Principal extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }

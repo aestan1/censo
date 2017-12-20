@@ -38,4 +38,8 @@ private int total;
     public void setTotal(int total) {
         this.total = total;
     }
+
+    public void guardar(){
+        Datos.guardar(this);
+    }
 }
